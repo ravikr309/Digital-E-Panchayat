@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77F1E9B6"
+    android:textAlignment="center"
+    tools:context=".admin_page">
+
+    <View
+        android:id="@+id/topview"
+        android:layout_width="413dp"
+        android:layout_height="141dp"
+        android:background="#C6EBF6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/updateview"
+        android:layout_width="305dp"
+        android:layout_height="164dp"
+        android:layout_marginBottom="396dp"
+        android:background="#F3EBB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/updatetext"
+        android:layout_width="233dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="12dp"
+        android:autoText="false"
+        android:text="To Update and Release The Notifications"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/updateview" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="300dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="48dp"
+        android:background="#EDCACA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateview" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="238dp"
+        android:layout_height="47dp"
+        android:text="List Of Issues"
+        android:textAlignment="center"
+        android:textColor="#0B0A0A"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/get_ISSUES"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/get_ISSUES"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:text="Get Here"
+        app:layout_constraintBottom_toBottomOf="@+id/view7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="301dp"
+        android:layout_height="183dp"
+        android:layout_marginBottom="65dp"
+        android:background="#D0EAD1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view7"
+        app:layout_constraintVertical_bias="0.606" />
+
+    <TextView
+        android:id="@+id/apln_list"
+        android:layout_width="224dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:text="Issue Important Documents"
+        android:textAlignment="center"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view9" />
+
+    <Button
+        android:id="@+id/doc_btn"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:text="Release"
+        app:layout_constraintBottom_toBottomOf="@+id/view9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apln_list" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="126dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo01" />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="224dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        android:padding="5sp"
+        android:text="Panchayat Raj and Rural Employment"
+        android:textColor="#070707"
+        android:textColorHighlight="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/topview"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/intro2"
+        android:layout_width="175dp"
+        android:layout_height="28dp"
+        android:text="Government Of India"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/updateview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/intro"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/clickhere"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:text="CLICK HERE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updatetext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
